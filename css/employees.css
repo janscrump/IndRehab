@@ -1,0 +1,904 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .singleSection {
+    padding: 5% 0%;
+  }
+
+  .singleHeading {
+    color: rgb(15, 108, 182);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+  }
+
+  .singleText {
+    text-align: center;
+    padding: 2% 10%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  .author {
+    padding-top: 2%;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+   .textHeading {
+    color: rgb(15, 108, 182);
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 2% 0%;
+  }
+
+  .infoBox {
+    text-align: center;
+    padding: 0% 10%;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+
+  .infoBoxSub {
+    text-align: center;
+    padding: 3% 2%;
+    font-size: 1.3rem;
+  }
+
+  /* Row 1 */
+
+
+  .questionheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question1 > .row1 > .question1 {
+    flex: 50%;
+  }
+
+  .question1 > .row1 > .picture1 {
+    flex: 50%;
+  }
+
+  .accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  
+  /* .readMore {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  } */
+
+  /* Row 2 */
+
+  .row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question2 {
+    background-color: white;
+  }
+
+  .question2 > .row2 > .picture2 {
+    flex: 50%;
+  }
+
+  .question2 > .row2 > .questions2 {
+    flex: 50%;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+  }
+
+  .map > img {
+    width: 75%;
+    padding: 2%;
+    
+  }
+
+  /* Row 3 */
+  
+  .facilitiesheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+
+  /* Row 4 */
+
+  .directorsheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row4 > .director1 {
+    flex: 50%;
+  }
+
+  .row4 > .director2 {
+    flex: 50%
+  }
+
+  /* Row 5 */
+
+  .directors2heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row5 > .director3 {
+    flex: 50%;
+  }
+
+  .row5 > .director4 {
+    flex: 50%
+  }
+
+  /* Begin Jobs Feed from TAM */
+
+  .allJobs {
+    height: auto;
+    padding: 5% 2%;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(15, 108, 182);
+  }
+
+  /* Begin Footer */
+
+  .footer {
+    height: auto;
+    color: rgb(15, 108, 182);
+    background-color: rgb(241, 241, 241);
+    /* padding-left: 2rem; */
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1.25% 0%;
+  }
+  
+  .footer p {
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: initial;
+    font-size: 1.5rem;
+  }
+  
+  .footer img {
+    max-height: 8vh;
+    padding-right: 50%;
+  }
+
+  .address {
+    margin: 0;
+  }
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .company img {
+      height: 8vh;
+      width: auto;
+    }
+
+    .sectionTitle {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      padding: 2% 0%;
+    }
+
+    .singleHeading {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
+
+    .singleText {
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+    }
+
+    .singleHeading2 {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
+    .quoteSection {
+      font-size: 1.4rem;
+      padding: 3% 3%;
+    }
+
+    .textHeading {
+      font-size: 1.4rem;
+      padding: 2% 0%;
+    }
+
+    .infoBox {
+      font-size: 1.1rem;
+      padding: 0% 5%;
+    }
+
+    .infoBoxSub {
+      font-size: 1.2rem;
+    }
+
+    .footer img {
+      max-height: 6vh;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .company img {
+      height: 7vh;
+      width: auto;
+    }
+    
+    .company > div > span {
+      font-size: 3rem;
+      letter-spacing: 4px;
+    }
+    
+    .sectionTitle {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        padding: 2% 0%;
+    }
+
+    .singleSection {
+      padding: 5% 4%;
+    }
+
+    .readMore {
+      font-size: 1.4rem;
+    }
+
+    .singleSection2 {
+      padding: 10% 3%;
+    }
+
+    .singleHeading {
+      font-size: 1.3rem;
+    }
+
+    .singleHeading2 {
+      font-size: 1.3rem;
+    }
+
+    .singleText {
+      padding: 2% 0%;
+      font-size: 1.1rem;
+    }
+
+    .quoteSection {
+      font-size: 1.1rem;
+      padding: 8% 3%;
+    }
+
+    .aurthor {
+      padding-top: 2%;
+      font-size: 1.3rem;
+    }
+
+    .text {
+      padding: 10% 3%;
+    }
+
+    .textHeading {
+      font-size: 1.3rem;
+    }
+
+    .infoBox {
+      font-size: 1.1rem;
+      padding: 3% 0%;
+    }
+    
+    .infoBoxSub {
+      font-size: 1.6rem;
+    }
+
+    .footer img {
+      max-height: 1rem;
+      padding-right: 35%;
+    }
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .company > div > span {
+      font-size: 2.2rem;
+      letter-spacing: 4px;
+    }
+    .company img {
+      width: auto;
+    }
+
+    .sectionTitle {
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        padding: 2% 0%;
+    }
+
+    .quoteSection {
+      font-size: 1.5rem;
+      padding: 8% 5%;
+    }
+
+    .aurthor {
+      padding-top: 2%;
+      font-size: 1.3rem;
+    }
+
+    .text {
+      padding: 8% 3%;
+    }
+
+    .textHeading {
+      font-size: 1.8rem;
+    }
+
+    .readMore {
+      font-size: 1.4rem;
+    }
+
+    .infoBox {
+      font-size: 1.5rem;
+      padding: 3% 0%;
+    }
+    
+    .infoBoxSub {
+      font-size: 1.6rem;
+    }
+
+    .row2 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .doubleSection1 > .row1 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection1 > .row1 > .picture {
+      flex: 100%;
+    }
+
+    .doubleSection2 > .row2 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection2 > .row2 > .picture {
+      flex: 100%;
+      /* padding-top: 5%; */
+    }
+
+    .doubleSection3 > .row3 > .picture {
+      flex: 100%;
+      text-align: center;
+    }
+  
+    .doubleSection3 > .row3 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection3 > .row3 > .picture > img {
+      width: 50%;
+      vertical-align: bottom;
+      /* padding-top: 5%; */
+    }
+
+    .footer img {
+      max-height: 1rem;
+      padding-right: 35%;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .company > div > span {
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+    }
+    .company img {
+      height: 6.2vh;
+      width: auto;
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding: 2% 0%;
+    }
+
+    .quoteSection {
+      font-size: 1.1rem;
+      padding: 5% 10%;
+    }
+
+    .aurthor {
+      padding-top: 3%;
+      font-size: .9rem;
+    }
+
+    .text {
+      padding: 5% 3%;
+    }
+
+    .singleSection2 {
+      padding: 5% 2%;
+  }
+
+    .textHeading {
+      font-size: 1.3rem;
+    }
+
+    .readMore {
+      font-size: 1.3rem;
+    }
+
+    .infoBox {
+      font-size: 1.1rem;
+      padding: 3% 0%;
+    }
+    
+    .infoBoxSub {
+      font-size: 1.2rem;
+    }
+
+    .row2 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .doubleSection1 > .row1 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection1 > .row1 > .picture {
+      flex: 100%;
+    }
+
+    .doubleSection2 > .row2 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection2 > .row2 > .picture {
+      flex: 100%;
+    }
+
+    .footer img {
+      max-height: 5vh;
+      padding-right: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    .company > div > span {
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+    }
+    .company img {
+      height: 7vh;
+      width: auto;
+    }
+
+    .sectionTitle {
+        font-size: 1.25rem;
+        letter-spacing: 3px;
+    }
+
+    .quoteSection {
+      font-size: 1.1rem;
+      padding: 5% 10%;
+    }
+
+    .aurthor {
+      padding-top: 4%;
+      font-size: 1rem;
+    }
+
+    .text {
+      padding: 2% 4%;
+    }
+
+    .textHeading {
+      font-size: 1.4rem;
+    }
+
+    .readMore {
+      font-size: 1.1rem;
+    }
+
+    .infoBox {
+      font-size: 1rem;
+      padding: 1% 8%;
+    }
+    
+    .infoBoxSub {
+      font-size: 1.3rem;
+    }
+
+    .row2 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .doubleSection1 > .row1 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection1 > .row1 > .picture {
+      flex: 100%;
+    }
+
+    .doubleSection2 > .row2 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection2 > .row2 > .picture {
+      flex: 100%;
+    }
+
+    .footer img {
+      max-height: 1rem;
+      padding-right: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .company > div > span {
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+    }
+    .company img {
+      height: 6vh;
+      width: auto;
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    .quoteSection {
+      font-size: 1.2rem;
+      padding: 5% 10%;
+    }
+
+    .aurthor {
+      padding-top: 4%;
+      font-size: 1.2rem;
+    }
+
+    .text {
+      padding: 8% 4%;
+    }
+
+    .textHeading {
+      font-size: 1.6rem;
+    }
+
+    .infoBox {
+      font-size: 1.3rem;
+      padding: 0% 8%;
+    }
+    
+    .infoBoxSub {
+      font-size: 1.3rem;
+    }
+
+    .row2 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .doubleSection1 > .row1 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection1 > .row1 > .picture {
+      flex: 100%;
+    }
+
+    .doubleSection2 > .row2 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection2 > .row2 > .picture {
+      flex: 100%;
+    }
+
+    .footer img {
+      max-height: 1rem;
+      padding-right: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .company > div > span {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+    .company img {
+      height: 5vh;
+      width: auto;
+    }
+
+    .sectionTitle {
+      font-size: .8rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .singleSection2 {
+      padding: 10% 3%;
+    }
+
+    .singleHeading {
+      font-size: 1rem;
+  }
+
+    .singleHeading2 {
+      font-size: 1rem;
+    }
+
+    .readMore {
+      font-size: 1rem;
+    }
+
+    .singleText {
+      padding: 2% 0%;
+      font-size: .6rem;
+    }
+
+    .quoteSection {
+      font-size: .8rem;
+      padding: 5% 7%;
+    }
+
+    .aurthor {
+      font-size: .65rem;
+    }
+
+    .text {
+      padding: 5% 4%;
+    }
+
+    .textHeading {
+      font-size: 1rem;
+    }
+
+    .infoBox {
+      font-size: .6rem;
+      padding: 0% 6%;
+    }
+    
+    .infoBoxSub {
+      font-size: .8rem;
+    }
+
+    .row2 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .doubleSection1 > .row1 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection1 > .row1 > .picture {
+      flex: 100%;
+    }
+
+    .doubleSection2 > .row2 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection2 > .row2 > .picture {
+      flex: 100%;
+    }
+
+    .title {
+      font-size: .8rem;
+    }
+
+    #theapplicantmanager {
+      font-size: .8rem;
+    }
+
+    .footer img {
+      max-height: 3vh;
+      padding-right: 55%;
+    }
+
+    .footer p {
+      letter-spacing: 1px;
+      font-size: .6rem;
+      font-weight: 300;
+    }
+    
+
+  }
+  
+
+  @media only screen and (max-width: 416px) {
+    .company > div > span {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+    .company img {
+      height: 5vh;
+      width: auto;
+    }
+
+    .sectionTitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .singleSection {
+      padding: 6% 4%;
+    }
+
+    .singleSection2 {
+      padding: 10% 3%;
+    }
+
+    .singleHeading {
+      font-size: 1rem;
+    }
+
+    .singleHeading2 {
+      font-size: 1rem;
+      letter-spacing: 2px;
+  }
+
+    .singleText {
+      padding: 2% 0%;
+      font-size: .6rem;
+
+    }
+
+    .quoteSection {
+      font-size: .8rem;
+      padding: 5% 7%;
+    }
+
+    .aurthor {
+      font-size: .65rem;
+    }
+
+    .text {
+      padding: 2% 2%;
+    }
+
+    .textHeading {
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .infoBox {
+      font-size: .6rem;
+      padding: 0% 2%;
+    }
+    
+    .infoBoxSub {
+      font-size: .8rem;
+    }
+
+    .row2 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .doubleSection1 > .row1 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection1 > .row1 > .picture {
+      flex: 100%;
+    }
+
+    .doubleSection2 > .row2 > .text {
+      flex: 100%;
+    }
+  
+    .doubleSection2 > .row2 > .picture {
+      flex: 100%;
+    }
+
+    .title {
+      font-size: .7rem;
+    }
+
+    #theapplicantmanager {
+      font-size: .8rem;
+    }
+
+    .footer img {
+      max-height: 2.8vh;
+    }
+
+  }
+
+  

@@ -1,0 +1,244 @@
+/* Begin Navigation */
+.icon {
+    display: none;
+  }
+  
+  .header {
+    background-color: rgb(15, 108, 182 );
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    font-weight: 500;
+    font-size: 1rem;
+    /* position: absolute; */
+    width: 100vw;
+    /* z-index: 1; */
+  }
+  
+  .header > .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 60%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .header > .row > .column3 {
+    flex: 12%;
+  } 
+  .header > .row > .column4 {
+    flex: 12%;
+  }
+  .header > .row > .column5 {
+    flex: 12%;
+  } 
+  .header > .row > .column6 {
+    flex: 12%;
+  } 
+  .header > .row > .column7 {
+    flex: 12%;
+  }
+  .header > .row > .column8 {
+    flex: 12%;
+  }
+  
+  .header > .row > .column3 > a > .logo {
+    max-height: 3rem;
+  }
+  
+  .header > .row > .column7 > .socialRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .header > .row > .column9 > .socialRow > .column6 {
+    flex: 50%;
+  }
+  
+  .header > .row > .column10 > .socialRow > .column7 {
+    flex: 50%;
+  }
+  
+  .header > .row > .column7 > .socialRow > .column9 > .facebook > a {
+    color: rgb(255, 255, 255);
+  }
+  .header > .row > .column7 > .socialRow > .column10 > .linkdin > a {
+    color: rgb(255, 255, 255);
+  }
+  
+  .header > .row > .nav:hover {
+    background-color: rgb( 0, 47, 101);
+  }
+  
+  .icon {
+    position: fixed;
+    z-index: 1;
+    color: rgb(255, 255, 255 );
+    font-size: 2.5rem;
+    padding: 2.5%;
+  }
+  
+  /* Begin Footer Styles */
+  .footer {
+    all: initial;
+    background-color: rgb(241, 241, 241);
+    background-size: cover;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .footer > .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 45%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .footer > .row > .column3 {
+    flex: 20%;
+  } 
+  .footer > .row > .column4 {
+    flex: 20%;
+  }
+  .footer > .row > .column5 {
+    flex: 20%;
+  } 
+  .footer > .row > .column6 {
+    flex: 20%;
+  } 
+  .footer > .row > .column7 {
+    flex: 20%;
+  }
+  
+  .footer > .row > .column6 > .socialRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .footer > .row > .column8 > .socialRow > .column6 {
+    flex: 50%;
+  }
+  
+  .footer > .row > .column9 > .socialRow > .column7 {
+    flex: 50%;
+  }
+  
+  .copy {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  
+  
+  /* Responsive Media Queries */
+  @media screen and (max-width: 1300px) {
+    .header > .row {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .header > .row {
+      width: 90%;
+    }
+  
+    .header > .row > .column3 > a > .logo {
+      max-height: 2.5rem;
+    }
+  
+    .header {
+      font-size: 1rem;
+    }
+    .footer > .row {
+      width: 95%;
+    }
+  
+    .copy {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 850px) {
+    .header > .row > .nav:not(:first-child) {display: none;}
+    .icon {
+      right: 0;
+      top: 0;
+      display: block;
+      z-index: 1;
+      position: fixed;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .headerresponsive {
+      top: 0;
+      right: 0;
+      z-index: 1;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: centered;
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .9);
+      overflow: hidden;
+      transition: 0.2s;
+      padding: 20% 0;
+      text-align: center;
+    }
+  
+    .headerresponsive > .row > .column3 > a > .logo{
+      max-height: 3rem;
+    }
+  
+    .headerresponsive > .row > .nav {
+      padding: 2% 0%;
+      font-size: 1.5rem;
+      padding: 2% 0;
+    }
+  
+    .headerresponsive > .row > .column7 > .socialRow {
+      font-size: 2rem;
+    } 
+    .headerresponsive > .row > .nav {display: block;}
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .footer {
+      font-size: .8rem;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .header > .row > .column3 > a > .logo {
+      max-height: 2.25rem;
+      padding: 4% 0;
+    }
+  
+    .icon {
+      font-size: 2rem;
+      padding: 3.5%;
+    }
+  }
+  
+  
